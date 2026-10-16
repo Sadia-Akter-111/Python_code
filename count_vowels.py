@@ -7,11 +7,5 @@ def count_vowels(text):
 
     return count
 
-    
-
-
-
-
-
 result=count_vowels("sadia")
 print("number of vowels:",result)
