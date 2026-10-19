@@ -10,4 +10,3 @@ def selection_sort(arr):
     return arr
 arr=[5,7,8,4,1,6,9,2]
 print("Sorted array: ",selection_sort(arr))
-
