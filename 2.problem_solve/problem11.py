@@ -1,19 +1,11 @@
-class Solution:
-    def moveZeroes(self, nums: list[int]) -> None:
-         nums = [1, 2, 0, 4, 6, 0, 8, 0, 9, 0]
+def linear_search(arr,target):
+    n=len(arr)
+    for i in range(n):
+        if arr[i]==target:
+            return i
 
-         n = len(nums)
-         j = 0
+    return -1
+arr=[1,2,3,4,5,6,7]
+print(linear_search(arr,10))
 
-         for i in range(n):
-              if nums[i] != 0:
-                 nums[j] = nums[i]
-                 j += 1
 
-              while j < n:
-                  nums[j] = 0
-                  j += 1
-         return nums
-print(nums)
-      
-        
